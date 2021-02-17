@@ -38,3 +38,7 @@ Crosswords:
 ## 5. Blockly
 ![initial](blockly_init.png)
 ![finished](blockly_done.png)
+
+## 6. Reflection
+An interesting open source project that would interest me would be an emulator for the nintendo DS that supports WiFi capabilities.
+Currently, there is no DS emulator that has full WiFi compatibility with other instances of the emulator on other computers. The most popular emulator, DeSmuME, does not support WiFi and will not receive support in the forseeable future, while the only emulator that I know of that does support it, MelonDS, does not perform said functions particularly well. This would be a interesting problem to tackle, since emulators of more recent systems like Citra's 3DS emulator do have support, yet this one is curiously difficult to get working. Significant progress into this field could also give insight on how to better preserve the full experience of older systems (not just videogames!). However, I am not sure whether I want to commit to this particular project yet, as I may come across a much more interesting project within the coming week(s).
