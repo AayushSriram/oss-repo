@@ -11,3 +11,10 @@ Learn Git Branching 1-4:
 [level2](gitlvl2.png)
 [level3](gitlvl3.png)
 [level4](gitlvl4.png)
+
+## Part 3
+[Link to forked PullReq](https://github.com/AayushSriram/PullReq)<br/>
+Git Diff:<br/>
+![git_diff](git_diff.png)<br/>
+Git Tag:<br/>
+![git_tag](git_tag.png)<br/>
