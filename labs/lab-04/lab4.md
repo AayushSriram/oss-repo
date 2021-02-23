@@ -20,5 +20,13 @@ I agree that failing to follow an open source model was a major factor in killin
 .NET uses an MIT License to help foster support from the greater community. Since the MIT License allows "the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,"<sub>[source](https://opensource.org/licenses/MIT)</sub> Microsoft is essentially allowing anybody to work on \(and make contributions to\) .NET without any major restrictions. Since .NET core is widely used and has many different applications \(such as machine learning, cross-platform development, and support for multiple programming languages <sub>[source](https://www.tutorialsteacher.com/core/dotnet-core)</sub>\), having many contributors can help lower the workload for the official development team and ensures that the software is constantly receiving updates for continued use.
 
 ## 7. Open Source Project and Business Model
+[Vibe Checker - Better Data for Medical Professionals!](https://github.com/AayushSriram/VibeChecker/blob/main/README.md)
 
 ## 8. Table of Projects/Resp. Licenses
+Website | License Present | License
+---------|:----------|:-------
+https://github.com/RPI-ALPACA | Yes | MIT License
+https://github.com/Stashmatic/ARAS | Yes | MIT License
+https://github.com/kozin00/bifrost | Yes | MIT License
+https://github.com/burtonwilliamt/carlogicapi | Yes | Apache-2.0 License
+https://github.com/flomv2/flom | Yes | MIT License
