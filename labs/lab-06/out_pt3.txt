@@ -1,66 +1,40 @@
 Loaded words_dat.txt containing 5757 five-letter English words.
 Two words are connected if they differ in one letter.
-Graph has 5757 nodes with 14135 edges
-853 connected components
+Graph has 5757 nodes with 112278 edges
+16 connected components
 Shortest path between chaos and order is
 chaos
-choos
-shoos
-shoes
-shoed
-shred
-sired
-sided
-aided
-added
-adder
-odder
+chose
+chore
+coder
 order
 Shortest path between nodes and graph is
 nodes
-lodes
-lores
-lords
-loads
-goads
-grads
-grade
-grape
+anode
+agone
+anger
+gaper
 graph
 Shortest path between moron and smart is
 moron
-boron
-baron
-caron
-capon
-capos
-capes
-canes
-banes
-bands
-bends
-beads
-bears
-sears
-stars
-start
+manor
+roams
 smart
 Shortest path between flies and swims is
 flies
-flips
-slips
-slims
+isles
+semis
 swims
 Shortest path between mango and peach is
 mango
-mange
-marge
-merge
-merse
-terse
-tease
-pease
-peace
+agone
+canoe
+pecan
 peach
 Shortest path between pound and marks is
-None
+pound
+mound
+modus
+dorms
+drams
+marks

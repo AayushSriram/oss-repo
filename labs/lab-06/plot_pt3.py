@@ -47,11 +47,16 @@ def generate_graph(words):
         cands = words - {word}
         w1 = Counter(word)
         for cand in sorted(cands):
-            # initialize a counter and subtract the two
-            # there should be a difference of +/-1
-            # amongst all elements of w1
+            # initialize counters for the word and candidate, then subtract.
+            # the absolute sum of the counts in the difference should be 2,
+            # since there is 1 more of a char and 1 less of a different one.
             w2 = Counter(cand)
-            w1.subtract(w2)
+            w2.subtract(w1)
+            count = 0
+            for val in w2.values():
+                count += abs(val)
+            if count == 2:
+                candgen.append((word, cand))
     
     G.add_nodes_from(words)
     for word, cand in candgen:
@@ -76,9 +81,9 @@ if __name__ == '__main__':
     orig_stdout = sys.stdout
     G = words_graph()
     # change output to a file
-    #f = open('out_pt1.txt', 'w')
-    #sys.stdout = f
-    print("Loaded words_dat.txt containing 5757 four-letter English words.")
+    f = open('out_pt3.txt', 'w')
+    sys.stdout = f
+    print("Loaded words_dat.txt containing 5757 five-letter English words.")
     print("Two words are connected if they differ in one letter.")
     print("Graph has %d nodes with %d edges"
           % (nx.number_of_nodes(G), nx.number_of_edges(G)))
@@ -98,5 +103,5 @@ if __name__ == '__main__':
         except nx.NetworkXNoPath:
             print("None")
     # return to normal
-    #sys.stdout = orig_stdout
-    #f.close()
+    sys.stdout = orig_stdout
+    f.close()
