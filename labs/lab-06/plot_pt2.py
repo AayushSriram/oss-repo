@@ -32,6 +32,7 @@ import gzip
 from string import ascii_lowercase as lowercase
 
 import networkx as nx
+import sys
 
 #-------------------------------------------------------------------
 #   The Words/Ladder graph of Section 1.1
@@ -58,28 +59,34 @@ def generate_graph(words):
 
 def words_graph():
     """Return the words example graph from the Stanford GraphBase"""
-    fh = gzip.open('words_dat.txt.gz', 'r')
+    fh = gzip.open('words4_dat.txt.gz', 'r')
     words = set()
     for line in fh.readlines():
         line = line.decode()
         if line.startswith('*'):
             continue
-        w = str(line[0:5])
+        w = str(line[0:4])
         words.add(w)
     return generate_graph(words)
 
 
 if __name__ == '__main__':
+    orig_stdout = sys.stdout
     G = words_graph()
-    print("Loaded words_dat.txt containing 5757 five-letter English words.")
+    # change output to a file
+    f = open('out_pt2.txt', 'w')
+    sys.stdout = f
+    print("Loaded words4_dat.txt containing 2174 five-letter English words.")
     print("Two words are connected if they differ in one letter.")
     print("Graph has %d nodes with %d edges"
           % (nx.number_of_nodes(G), nx.number_of_edges(G)))
     print("%d connected components" % nx.number_connected_components(G))
 
-    for (source, target) in [('chaos', 'order'),
-                             ('nodes', 'graph'),
-                             ('pound', 'marks')]:
+    for (source, target) in [('cold', 'warm'),
+                             ('love', 'hate'),
+                             ('good', 'evil'),
+                             ('pear', 'beef'),
+                             ('make', 'take')]:
         print("Shortest path between %s and %s is" % (source, target))
         try:
             sp = nx.shortest_path(G, source, target)
@@ -87,3 +94,6 @@ if __name__ == '__main__':
                 print(n)
         except nx.NetworkXNoPath:
             print("None")
+    # return to normal
+    sys.stdout = orig_stdout
+    f.close()
