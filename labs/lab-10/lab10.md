@@ -4,9 +4,9 @@
 ![Pop-up](check2.png)
 # Checkpoint 3: Curate Some Data
 ankle boots<br>
-![ankle](ankleboots.png)
+![ankle](ankleboots.png)<br>
 converted<br>
-![ank_conv](ankleboots_converted.png)
+![ank_conv](ankleboots_converted.png)<br>
 classification: Trouser<br>
 sneakers<br>
 ![sneak](sneakers.jpg)<br>
