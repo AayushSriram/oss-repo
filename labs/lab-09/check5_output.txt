@@ -1,0 +1,6 @@
+{'_id': ObjectId('56fe9e22bad6b23cde07b8e0'),
+ 'dates': ['2021-05-01T07:22:29.663450', '2021-05-01T07:22:29.817113'],
+ 'definition': ' n.  (Niven) Sea-bottom ooze; very fine, fertile mud which is '
+               'useful for gardens and green, growing things. (Like mold.) '
+               'Also see: DAKA.',
+ 'word': 'Flup'}
